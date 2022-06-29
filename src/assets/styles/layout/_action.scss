@@ -1,0 +1,9 @@
+.action {
+  margin: 10rem 0;
+
+  &__items {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}

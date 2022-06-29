@@ -1,0 +1,26 @@
+.goods {
+  &__items {
+    display: flex;
+    direction: column;
+
+    // @media ($tablet) {
+    //   flex-direction: row;
+    //   flex-wrap: wrap;
+    //   justify-content: space-around;
+    // }
+  }
+
+  &__title {
+    @extend .h3;
+    margin-bottom: 3.8rem;
+    padding-top: 8rem;
+  }
+}
+
+.good {
+  margin-right: 3rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

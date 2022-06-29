@@ -1,0 +1,15 @@
+.goods__items {
+  display: flex;
+  direction: row;
+}
+
+.good {
+  margin-right: 3rem;
+  margin-bottom: 8.1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 111rem;
+  margin: 0 auto;
+}/*# sourceMappingURL=index.css.map */

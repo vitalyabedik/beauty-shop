@@ -1,0 +1,41 @@
+.sale {
+  background-color: $accent;
+  position: relative;
+
+  &__image {
+    @extend .img;
+    width: 100%;
+    padding-left: 32rem;
+    height: 60.4rem;
+  }
+
+  &__text {
+    position: absolute;
+    top: 19.3rem;
+  }
+
+  &__title {
+    @extend .h1;
+    max-width: 30.8rem;
+  }
+
+  &__desc {
+    @extend .p1;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    max-width: 30.8rem;
+  }
+
+  &__btn {
+    @extend .btn;
+    width: 17rem;
+    height: 4rem;
+    color: $white;
+    background-color: $accent;
+    border: 0.2rem solid $white;
+    border-radius: 4rem;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    padding-top: 0.9rem;
+  }
+}
