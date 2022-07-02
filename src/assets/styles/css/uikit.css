@@ -14,6 +14,7 @@ html,
 body {
   font-size: 10px;
   font-family: "roboto";
+  font-weight: 400;
 }
 
 h1,
@@ -63,7 +64,7 @@ a {
   line-height: 2.1rem;
 }
 
-.h5 {
+.h5, .footer__title {
   font-size: 1.6rem;
   color: #000000;
   font-weight: 500;
@@ -73,14 +74,12 @@ a {
 .p1, .sale__desc, .subscribe__desc, .ourShops__desc {
   font-size: 1.4rem;
   color: #ffffff;
-  font-weight: 400;
   line-height: 2rem;
 }
 
 .p2, .good__desc {
   font-size: 1.4rem;
   color: #333333;
-  font-weight: 400;
   line-height: 2rem;
 }
 
@@ -92,31 +91,41 @@ a {
   letter-spacing: 0.05rem;
 }
 
-.a__header1, .menu__bot-link, .menu__bot-item, .menu__number {
+.a__header1, .footer__adress, .menu__bot-link, .menu__bot-item, .menu__number, .footer__number {
   color: #000000;
   font-size: 1.6rem;
   line-height: 1.9rem;
   font-weight: 400;
 }
 
-.a__header2, .menu__btn, .menu__top-link, .menu__top-item {
+.a__header2, .menu__btn, .footer__btn, .menu__top-link, .menu__top-item {
   color: #333333;
   font-size: 1.4rem;
   line-height: 1.6rem;
-  font-weight: 400;
 }
 
-.img, .sale__image, .brands__items-image, .menu__logo, .subscribe__image, .ourShops__image, .good__image {
+.a__footer1, .footer__link {
+  color: #828282;
+  font-size: 1.2rem;
+  line-height: 2.8rem;
+}
+
+.a__footer2, .footer__confident-text {
+  color: #828282;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.img, .sale__image, .brands__items-image, .menu__search-image, .menu__logo, .subscribe__image, .ourShops__image, .good__image {
   object-fit: cover;
   object-position: center;
 }
 
-.btn, .sale__btn, .menu__btn, .ourShops__btn, .good__btn {
+.btn, .sale__btn, .menu__btn, .footer__btn, .ourShops__btn, .good__btn {
   display: inline-block;
   background-color: #ffffff;
   color: #000000;
   font-size: 1.4rem;
-  font-weight: 400;
   line-height: 1.6rem;
   cursor: pointer;
   border: none;
@@ -125,17 +134,16 @@ a {
   text-decoration: none;
   border-radius: 4rem;
 }
-.btn:hover, .sale__btn:hover, .menu__btn:hover, .ourShops__btn:hover, .good__btn:hover {
+.btn:hover, .sale__btn:hover, .menu__btn:hover, .footer__btn:hover, .ourShops__btn:hover, .good__btn:hover {
   background-color: #cccccc;
 }
-.btn:focus, .sale__btn:focus, .menu__btn:focus, .ourShops__btn:focus, .good__btn:focus {
+.btn:focus, .sale__btn:focus, .menu__btn:focus, .footer__btn:focus, .ourShops__btn:focus, .good__btn:focus {
   outline: none;
 }
 
 .input, .subscribe__form-input {
   color: #333333;
   font-size: 1.4rem;
-  font-weight: 400;
   background-color: #ffffff;
   padding: 0.95rem 0;
   line-height: 1.6rem;
@@ -247,6 +255,27 @@ a {
   right: 4.2rem;
 }
 
+.wrapper__header-top {
+  width: 100%;
+  max-width: 192rem;
+  margin: 0 auto;
+  background-color: #efefef;
+}
+
+.wrapper__header-active {
+  width: 100%;
+  max-width: 192rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.wrapper__header-bot {
+  width: 100%;
+  max-width: 192rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
 .menu {
   text-align: center;
 }
@@ -263,25 +292,43 @@ a {
   padding-right: 0;
 }
 .menu__items {
+  height: 12rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .menu__logo {
   height: 8rem;
   width: 8rem;
-  padding: 2rem 2rem 2rem 0;
+  margin-right: 2rem;
+}
+.menu__title {
+  margin-right: 17.1rem;
+}
+.menu__search {
+  width: 25.1rem;
+  position: relative;
+  margin-right: 9rem;
 }
 .menu__search-input {
-  width: 25.1rem;
   width: 100%;
   height: 4rem;
   background-color: #efefef;
-  padding-left: 2rem;
+  padding-left: 5rem;
   border: none;
   border-radius: 4rem;
 }
-.menu__btn {
+.menu__search-image {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 1rem;
+  left: 2.1rem;
+}
+.menu__number, .footer__number {
+  margin-right: 4.3rem;
+}
+.menu__btn, .footer__btn {
   color: #000000;
   width: 17rem;
   height: 4rem;
@@ -293,7 +340,6 @@ a {
   height: 7.9rem;
   padding-top: 3rem;
   margin-left: -12.7rem;
-  border-top: 0.01rem solid #efefef;
 }
 .menu__bot-item {
   display: inline-block;
@@ -375,6 +421,83 @@ a {
   padding-top: 0.9rem;
 }
 
+.wrapper__footer-categories {
+  width: 100%;
+  max-width: 192rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.wrapper__footer-actions {
+  width: 100%;
+  max-width: 192rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.wrapper__footer-confident {
+  width: 100%;
+  max-width: 192rem;
+  margin: 0 auto;
+  background-color: #efefef;
+}
+
+.footer__categories {
+  display: flex;
+  justify-content: space-between;
+  height: 37.3rem;
+}
+.footer__category {
+  height: 100%;
+  width: 25.5rem;
+}
+.footer__title {
+  max-width: 9.9rem;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+.footer__items {
+  border-top: 1px solid #efefef;
+  padding-top: 2.5rem;
+  padding-bottom: 6rem;
+}
+.footer__link {
+  text-decoration: none;
+  margin-left: -4rem;
+}
+.footer__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12rem;
+}
+.footer__icons {
+  display: inline-block;
+  text-align: center;
+}
+.footer__icon {
+  display: inline-block;
+  width: 4.5rem;
+  height: 4.5rem;
+  color: #f13c6e;
+  border: 2px solid #f13c6e;
+  border-radius: 50%;
+  padding-top: 1.5rem;
+  margin-right: 2rem;
+}
+.footer__icon:last-child {
+  margin-right: 0;
+}
+.footer__adress {
+  display: inline-block;
+}
+.footer__confident {
+  padding: 2.5rem 0;
+}
+.footer__confident-text:last-child {
+  padding-left: 34.5rem;
+}
+
 .container {
   width: 100%;
   max-width: 111rem;
@@ -389,7 +512,7 @@ body {
   height: 5rem;
 }
 
-.wrapper, .wrapper__top-header {
+.wrapper {
   max-width: 118rem;
   margin: auto;
 }

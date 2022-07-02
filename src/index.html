@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/4200602909.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Beauty shop</title>
   </head>
   <body>
     <header>
       <div class="menu">
-        <div class="wrapper__top-header">
+        <div class="wrapper__header-top">
           <div class="container">
             <div class="menu__top">
               <nav>
@@ -36,7 +40,7 @@
           </div>
         </div>
 
-        <div class="wrapper__bot-header">
+        <div class="wrapper__header-active">
           <div class="container">
             <div class="menu__active">
               <div class="menu__items">
@@ -53,6 +57,8 @@
                     placeholder=""
                     class="menu__search-input"
                   />
+                  <img class="menu__search-image" src="./assets/images/search.png" alt="search-image">
+                  <!-- <button class="menu__search-icon" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button> -->
                 </form>
                 <a class="menu__number" href="tel:+78121234567" target="_blank"
                   >8 (812) 123-45-67</a
@@ -60,33 +66,36 @@
                 <a href="#" class="menu__btn">Обратный звонок</a>
               </div>
             </div>
-
-            <div class="menu__bot">
-              <nav>
-                <ul>
-                  <li class="menu__bot-item">
-                    <a href="#" class="menu__bot-link">Парикмахерская</a>
-                  </li>
-                  <li class="menu__bot-item">
-                    <a href="#" class="menu__bot-link">Барбершоп</a>
-                  </li>
-                  <li class="menu__bot-item">
-                    <a href="#" class="menu__bot-link">Маникюр</a>
-                  </li>
-                  <li class="menu__bot-item">
-                    <a href="#" class="menu__bot-link">Педикюр</a>
-                  </li>
-                  <li class="menu__bot-item">
-                    <a href="#" class="menu__bot-link">Массаж</a>
-                  </li>
-                  <li class="menu__bot-item">
-                    <a href="#" class="menu__bot-link">Мебель</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
           </div>
         </div>
+
+        <div class="wrapper__header-bot">
+          <hr>
+          <div class="menu__bot">
+            <nav>
+              <ul>
+                <li class="menu__bot-item">
+                  <a href="#" class="menu__bot-link">Парикмахерская</a>
+                </li>
+                <li class="menu__bot-item">
+                  <a href="#" class="menu__bot-link">Барбершоп</a>
+                </li>
+                <li class="menu__bot-item">
+                  <a href="#" class="menu__bot-link">Маникюр</a>
+                </li>
+                <li class="menu__bot-item">
+                  <a href="#" class="menu__bot-link">Педикюр</a>
+                </li>
+                <li class="menu__bot-item">
+                  <a href="#" class="menu__bot-link">Массаж</a>
+                </li>
+                <li class="menu__bot-item">
+                  <a href="#" class="menu__bot-link">Мебель</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>   
       </div>
     </header>
     <main>
@@ -286,9 +295,158 @@
             </div>
           </div>
         </section>
-
         <div class="divider"></div>
       </div>
     </main>
+
+    <footer class="footer">
+      <div class="wrapper__footer-categories">
+        <div class="container">
+          <div class="footer__categories">
+            <div class="footer__category">
+              <h5 class="footer__title">Популярные категории</h5>
+              <div class="footer__items">
+                <ul>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Насадки</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Инструменты</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Гель-лаки</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Дизайн</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Наращивание</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Оборудование</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__category">
+              <h5 class="footer__title">Популярные категории</h5>
+              <div class="footer__items">
+                <ul>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Насадки</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Инструменты</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Гель-лаки</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Дизайн</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Наращивание</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Оборудование</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__category">
+              <h5 class="footer__title">Популярные категории</h5>
+              <div class="footer__items">
+                <ul>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Насадки</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Инструменты</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Гель-лаки</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Дизайн</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Наращивание</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Оборудование</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__category">
+              <h5 class="footer__title">Популярные категории</h5>
+              <div class="footer__items">
+                <ul>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Насадки</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Инструменты</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Гель-лаки</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Дизайн</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Наращивание</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Оборудование</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper__footer-actions">
+        <hr />
+        <div class="container">
+          <div class="footer__actions">
+            <div class="footer__icons">
+              <a href="#" class="footer__icon"
+              ><i class="fa-brands fa-youtube fa-2xl"></i></i
+            ></a>
+            <a href="#" class="footer__icon"
+              ><i class="fa-brands fa-vk fa-2xl" ></i
+            ></a>
+            <a href="#" class="footer__icon"
+              ><i class="fa-brands fa-facebook-f fa-2xl"></i
+            ></a>
+            <a href="#" class="footer__icon"
+              ><i class="fa-brands fa-instagram fa-2xl"></i
+            ></a>
+              </div>
+            <p class="footer__adress">198555, Невский пр. 140, офис 140</p>
+            <a class="footer__number" href="tel:+78121234567" target="_blank"
+              >8 (812) 123-45-67</a
+            >
+            <a href="#" class="footer__btn">Обратный звонок</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper__footer-confident">
+        <div class="container">
+          <div class="footer__confident">
+            <a href="#" class="footer__confident-text">
+              Лучший магазин (с) 2019 Все права защищены. Интернет-магазин
+              оборудования для салонов красоты
+            </a>
+            <a href="#" class="footer__confident-text">
+              Политика конфиденциальности
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

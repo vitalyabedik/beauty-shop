@@ -2,13 +2,6 @@
 @import "./components/";
 @import "./layout/";
 
-.wrapper {
-  width: 100%;
-  max-width: 192rem;
-  margin: 0 auto;
-  background-color: $grayBackground1;
-}
-
 .container {
   width: 100%;
   max-width: 111rem;
@@ -17,4 +10,13 @@
 
 .divider {
   height: 8rem;
+}
+
+hr {
+  border: 0;
+  border-top: 0.01rem solid $grayBackground1;
+}
+
+.wrapper {
+  @include wrapper;
 }
