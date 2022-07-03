@@ -12,6 +12,7 @@ $grayText: #828282;
 $mainFont: "roboto";
 
 // screens
-$tablet: "min-width: 768px";
-$desktop: "min-width: 1024px";
-$projector: "min-width: 1200px";
+$mobile: "max-width: 576px";
+$tablet: "max-width: 768px";
+$desktop: "max-width: 1024px";
+$projector: "max-width: 1200px";

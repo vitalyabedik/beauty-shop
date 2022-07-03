@@ -15,11 +15,20 @@
     display: flex;
     justify-content: space-between;
     height: 37.3rem;
+
+    @media ($projector) {
+      margin: 0 2rem;
+      padding: 0 2rem;
+      justify-content: space-evenly;
+    }
   }
 
   &__category {
-    height: 100%;
     width: 25.5rem;
+
+    @media ($projector) {
+      width: 8rem;
+    }
   }
 
   &__title {
@@ -52,6 +61,14 @@
   &__icons {
     display: inline-block;
     text-align: center;
+
+    @media ($projector) {
+      display: flex;
+      margin: 0 4rem;
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__icon {
@@ -69,32 +86,80 @@
     &:last-child {
       margin-right: 0;
     }
+
+    &:hover {
+      background-color: darken($white, 20%);
+    }
+
+    @media ($mobile) {
+      margin-right: 0;
+    }
   }
 
   &__adress {
     display: inline-block;
     @extend .a__header1;
-    // margin-right: 10.5rem;
+
+    @media ($projector) {
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    @media ($mobile) {
+      width: 10rem;
+      text-align: center;
+      font-size: 1rem;
+      margin-left: -4rem;
+    }
   }
 
   &__number {
     @extend .menu__number;
-    // margin-right: 4rem;
+
+    @media ($projector) {
+      text-align: center;
+      font-size: 1rem;
+      margin-right: 2rem;
+    }
+
+    @media ($mobile) {
+      text-align: center;
+      font-size: 1rem;
+      margin-right: 0;
+    }
   }
 
   &__btn {
     @extend .menu__btn;
+
+    @media ($mobile) {
+      margin: 0;
+    }
   }
 
   &__confident {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 2.5rem 0;
+
+    @media ($projector) {
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+    }
 
     &-text {
       @extend .a__footer2;
 
-      &:last-child {
-        padding-left: 34.5rem;
+      @media ($projector) {
+        line-height: 1.4;
       }
+
+      // &:last-child {
+      //   padding-left: 34.5rem;
+      // }
     }
   }
 }
