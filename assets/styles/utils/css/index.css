@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "roboto";
+  src: url("roboto-webfont.woff2") format("woff2"), url("roboto-webfont.woff") format("woff"), url("roboto-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 10px;
+  font-family: "roboto";
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "roboto";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.h1 {
+  font-size: 4.8rem;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 5.6rem;
+}
+
+.h2 {
+  font-size: 3.6rem;
+  color: #f13c6e;
+  font-weight: 700;
+  line-height: 4.2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.h3 {
+  font-size: 2.4rem;
+  color: #000000;
+  font-weight: 700;
+  line-height: 2.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.h4 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 2.1rem;
+}
+
+.h5 {
+  font-size: 1.6rem;
+  color: #000000;
+  font-weight: 500;
+  line-height: 2.2rem;
+}
+
+.p1 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  line-height: 2rem;
+}
+
+.p2 {
+  font-size: 1.4rem;
+  color: #333333;
+  line-height: 2rem;
+}
+
+.p3 {
+  color: #000000;
+  font-size: 2.1rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  letter-spacing: 0.05rem;
+}
+
+.a__header1 {
+  color: #000000;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: 400;
+}
+
+.a__header2 {
+  color: #333333;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.a__footer1 {
+  color: #828282;
+  font-size: 1.2rem;
+  line-height: 2.8rem;
+}
+
+.a__footer2 {
+  color: #828282;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  user-select: none;
+  text-decoration: none;
+  border-radius: 4rem;
+}
+.btn:hover {
+  background-color: #cccccc;
+}
+.btn:focus {
+  outline: none;
+}
+
+.input {
+  color: #333333;
+  font-size: 1.4rem;
+  background-color: #ffffff;
+  padding: 0.95rem 0;
+  line-height: 1.6rem;
+  border: none;
+  border-radius: 3rem;
+}
+.input::placeholder {
+  color: #c4c4c4;
+}/*# sourceMappingURL=index.css.map */

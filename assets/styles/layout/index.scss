@@ -1,0 +1,12 @@
+@import "./header";
+@import "./action";
+@import "./brands";
+@import "./goods";
+@import "./sale";
+@import "./footer-categories";
+
+.container {
+  width: 100%;
+  max-width: 111rem;
+  margin: 0 auto;
+}
